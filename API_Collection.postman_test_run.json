@@ -1,0 +1,176 @@
+{
+	"id": "c8880917-84f0-4adb-bc2d-f933a032734b",
+	"name": "API Collection",
+	"timestamp": "2020-11-23T00:59:27.132Z",
+	"collection_id": "f1f985d7-2fc7-45ec-96cc-487563f99f22",
+	"folder_id": 0,
+	"environment_id": "885993b7-8c25-4ee9-83b0-d6e97e58538c",
+	"totalPass": 5,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "916b5602-10fe-47d8-94ba-03ce00a28eb1",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 582,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				582
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "d4eeb74a-f31a-4e52-9d20-9f0cea1a27c5",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "71e2cb85-e892-4463-964f-0476111f287d",
+			"name": "Get entry per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
+			"time": 141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9a89a0fd-b1b5-4da9-a891-aaf76e682018",
+			"name": "Create new Entry",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 168,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				168
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "914cdcf6-91af-432c-9cea-066c9c202c51",
+			"name": "Delete a todo per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo?todo_id=2",
+			"time": 382,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 405 ": false
+			},
+			"testPassFailCounts": {
+				"Status code is 405 ": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				382
+			],
+			"allTests": [
+				{
+					"Status code is 405 ": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1412,
+	"collection": {
+		"requests": [
+			{
+				"id": "916b5602-10fe-47d8-94ba-03ce00a28eb1",
+				"method": "GET"
+			},
+			{
+				"id": "d4eeb74a-f31a-4e52-9d20-9f0cea1a27c5",
+				"method": "GET"
+			},
+			{
+				"id": "71e2cb85-e892-4463-964f-0476111f287d",
+				"method": "GET"
+			},
+			{
+				"id": "9a89a0fd-b1b5-4da9-a891-aaf76e682018",
+				"method": "POST"
+			},
+			{
+				"id": "914cdcf6-91af-432c-9cea-066c9c202c51",
+				"method": "DELETE"
+			}
+		]
+	}
+}
