@@ -1,0 +1,270 @@
+{
+	"id": "7bcbc082-b229-4495-9e95-7bcf4a38c967",
+	"name": "User_Collection",
+	"timestamp": "2020-11-23T16:18:39.786Z",
+	"collection_id": "8a1b308e-eaeb-425a-b2af-3a8fad12d216",
+	"folder_id": 0,
+	"environment_id": "885993b7-8c25-4ee9-83b0-d6e97e58538c",
+	"totalPass": 18,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0344b114-15fa-486f-9e62-90ad6dab8ddb",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 835,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				835
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "f78af01e-2870-4703-b4ea-c78e1eda7e95",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "061df7e0-c874-4444-ac05-6658a22f377b",
+			"name": "Get entry per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo/?todo_id=2",
+			"time": 327,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				327
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "a0bd298b-cb1e-49c5-9e1d-dd9d502c355a",
+			"name": "Create New Record",
+			"url": "https://reqres.in/api/user",
+			"time": 269,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				269
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "6abef6ad-79a9-4c4f-aaae-77b02f7dca87",
+			"name": "Delete User Record",
+			"url": "https://reqres.in/api/users/2",
+			"time": 359,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				359
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "32bf4487-01e4-44bb-b686-a4c859c90d0f",
+			"name": "Update User Record",
+			"url": "https://reqres.in/api/user/2",
+			"time": 292,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code name has string": true,
+				"Status code is 200": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				292
+			],
+			"allTests": [
+				{
+					"Status code name has string": true,
+					"Status code is 200": true,
+					"Content-Type is present": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2335,
+	"collection": {
+		"requests": [
+			{
+				"id": "0344b114-15fa-486f-9e62-90ad6dab8ddb",
+				"method": "GET"
+			},
+			{
+				"id": "f78af01e-2870-4703-b4ea-c78e1eda7e95",
+				"method": "GET"
+			},
+			{
+				"id": "061df7e0-c874-4444-ac05-6658a22f377b",
+				"method": "GET"
+			},
+			{
+				"id": "a0bd298b-cb1e-49c5-9e1d-dd9d502c355a",
+				"method": "POST"
+			},
+			{
+				"id": "6abef6ad-79a9-4c4f-aaae-77b02f7dca87",
+				"method": "DELETE"
+			},
+			{
+				"id": "32bf4487-01e4-44bb-b686-a4c859c90d0f",
+				"method": "PUT"
+			}
+		]
+	}
+}
